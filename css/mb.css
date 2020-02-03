@@ -43,22 +43,31 @@ body {
 }
 
 .action{
-    background: brown;
-    color: white;
+    position: relative;
     display: inline;
+    color: white;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    user-select: none;
     
     transition: all 0.4s ease 0s;
+
+    border: 1px solid white
 }
-.action:hover{
-    background: red
+.action:hover {
+    border: 1px solid grey
+}
+.action:active {
+    top: 2;
 }
 .action.disabled{
     cursor: not-allowed;
     color: grey
 }
-.action.disabled:hover{
-    color: brown
-}
+.action.red          { background: brown;}
+.action.red:hover    { background: red   }
+.action.green        { background: darkgreen;}
+.action.green:hover  { background: green;}
+.action.yellow       { background: goldenrod;}
+.action.yellow:hover { background: gold;}
