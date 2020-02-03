@@ -55,10 +55,23 @@
         takimata sanctus est Lorem ipsum dolor sit amet.
 
         <h1>Buttons</h1>
+        Einfache Buttons:
         <div class="action red">Normale Aktion</div>
         <div class="action green">Normale Aktion</div>
         <div class="action yellow">Normale Aktion</div>
         <div class="action disabled">Normale Aktion disabled</div>
+        <br>
+        Buttons, die auch selektiert sein können:
+        <div class="action red">1</div>
+        <div class="action red selected">2</div>
+        <div class="action green">3</div>
+        <div class="action green selected">4</div>
+        <div class="action yellow">5</div>
+        <div class="action yellow selected">6</div>
+        Und hier zum selbst Klicken:
+        <div class="action red" ng-class="{selected:s1}" ng-click="s1=!s1">1</div>
+        <div class="action green" ng-class="{selected:s2}" ng-click="s2=!s2">2</div>
+        <div class="action yellow"ng-class="{selected:s3}" ng-click="s3=!s3">3</div>
 
 
         <h1>Mehr Text ...</h1>

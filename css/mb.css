@@ -45,9 +45,11 @@ body {
 
 .action{
     position: relative;
-    display: inline;
+    display: inline-block;
     color: white;
-    padding: 5px;
+    padding: 4px 7px;
+    margin: 2px 0px;
+
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
@@ -62,13 +64,20 @@ body {
 .action:active {
     top: 2;
 }
+.action.selected {
+    top: -5px;
+    box-shadow: 0px 10px 12px 0px rgba(150,150,150,1);
+}
 .action.disabled{
     cursor: not-allowed;
     color: grey
 }
-.action.red          { background: brown;}
-.action.red:hover    { background: red   }
-.action.green        { background: darkgreen;}
-.action.green:hover  { background: green;}
-.action.yellow       { background: goldenrod;}
-.action.yellow:hover { background: gold;}
+.action.red             { background: brown;}
+.action.red:hover       { background: red   }
+.action.red.selected    { background: red   }
+.action.green           { background: darkgreen;}
+.action.green:hover     { background: green;}
+.action.green.selected  { background: green;}
+.action.yellow          { background: goldenrod;}
+.action.yellow:hover    { background: gold;}
+.action.yellow.selected { background: gold;}
