@@ -39,6 +39,7 @@ body {
     left: 20px;    right: 20px;
     padding: 20px;
     background: rgba(255,255,255,0.8);
+    box-shadow: inset 0px -4px 12px 0px rgba(150,150,150,1);
     overflow: scroll;
 }
 
