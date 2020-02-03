@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    font-family:  'Lucida Sans Unicode', 'Arial', serif;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    left: 0; right: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 10;
+    color: white;
+    font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#header #logo {
+    width: 25px; height: 25px;
+    padding: 0 10px;
+    filter: invert(1);
+}
+
+#header #title {}
+#header #time { 
+    right: 10px; 
+    position: fixed;
+}
+
+#content {
+    position: fixed;
+    top: 65px;    bottom: 20px;
+    left: 20px;    right: 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+    overflow: scroll;
+}
+
+.action{
+    background: brown;
+    color: white;
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: all 0.4s ease 0s;
+}
+.action:hover{
+    background: red
+}
+.action.disabled{
+    cursor: not-allowed;
+    color: grey
+}
+.action.disabled:hover{
+    color: brown
+}
